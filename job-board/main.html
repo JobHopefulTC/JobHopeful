@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JobHopeful</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease;
+  }
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: auto; /* Lock to left */
+  }
+  .navigation {
+    display: flex;
+    flex-grow: 1; /* Occupy remaining space */
+    justify-content: center;
+  }
+  .navigation button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  .signin-button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .mode-switcher {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+  }
+  .moon-icon, .sun-icon {
+    display: none;
+  }
+  .dark-mode .moon-icon {
+    display: inline-block;
+  }
+  .dark-mode .sun-icon {
+    display: none;
+  }
+  .search-bar {
+    text-align: center;
+    margin: 20px auto;
+  }
+  .search-input {
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 300px;
+    font-size: 16px;
+  }
+  .search-button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .links {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .links a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">JobHopeful</div>
+  <div class="navigation">
+    <button>Community</button>
+    <button>Jobs</button>
+    <button>For Employers</button>
+  </div>
+  <button class="mode-switcher" onclick="toggleDarkMode()">
+    <img class="moon-icon" src="https://emojicdn.elk.sh/🌙" alt="Moon">
+    <img class="sun-icon" src="https://emojicdn.elk.sh/☀️" alt="Sun">
+  </button>
+  <a href="login.html" class="signin-button">Sign In</a>
+</header>
+
+<div class="search-bar">
+  <input type="text" class="search-input" placeholder="Search...">
+  <button class="search-button">Search</button>
+</div>
+
+<div class="links">
+  <a href="login.html">Upload your resume</a>
+  <span>- it only takes a few minutes</span>
+</div>
+<div class="links">
+  <a href="#">Here to hire?</a>
+  <span>- Post a job to get started today</span>
+</div>
+
+<script>
+  function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+  }
+</script>
+
+</body>
+</html>
+
+

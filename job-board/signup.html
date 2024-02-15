@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .signup-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .signup-form {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: left; /* Align text left */
+    max-width: 400px; /* Limit width */
+    margin: auto; /* Center horizontally */
+  }
+  .signup-form h2 {
+    font-weight: bold;
+    margin-bottom: 10px; /* Add space below */
+  }
+  .signup-form input[type="email"], 
+  .signup-form input[type="password"], /* Added style for password input */
+  .signup-form button {
+    width: calc(100% - 20px); /* Adjust width */
+    padding: 8px;
+    margin: 10px 0; /* Adjust margin */
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  .signup-form button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .signup-disclaimer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+  }
+  .signup-disclaimer a {
+    color: #007bff;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+
+<div class="signup-container">
+  <div class="signup-form">
+    <h2>Create an Account</h2>
+    <p>Enter your email and create a password.</p>
+    <form>
+      <input type="email" id="email" name="email" placeholder="Enter your email">
+      <input type="password" id="password" name="password" placeholder="Create a password">
+      <button type="submit">Sign Up</button>
+    </form>
+    <div class="signup-disclaimer">
+      By creating an account, you agree to our <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+

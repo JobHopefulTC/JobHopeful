@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .login-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .logo {
+    display: block;
+    margin: 0 auto 20px; /* Center horizontally and add space below */
+    cursor: pointer; /* Change cursor to pointer for better indication */
+  }
+  .login-form {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: left; /* Align text left */
+    max-width: 400px; /* Limit width */
+    margin: auto; /* Center horizontally */
+  }
+  .login-form h2 {
+    font-weight: bold;
+    margin-bottom: 10px; /* Add space below */
+  }
+  .login-form input[type="email"], 
+  .login-form input[type="password"], /* Added style for password input */
+  .login-form button {
+    width: calc(100% - 20px); /* Adjust width */
+    padding: 8px;
+    margin: 10px 0; /* Adjust margin */
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  .login-form button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .login-disclaimer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+  }
+  .login-disclaimer a {
+    color: #007bff;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+
+<div class="login-container">
+  <a href="main.html"> <!-- Add anchor tag with href pointing to the home page -->
+    <img src="jobhopeful_logo.png" alt="JobHopeful Logo" class="logo">
+  </a>
+  <div class="login-form">
+    <h2>Ready to take the next step?</h2>
+    <p>Create an account or sign in.</p>
+    <form>
+      <input type="email" id="email" name="email" placeholder="Enter your email">
+      <p><a href="signup.html" class="signup-link">Sign Up</a></p> <!-- Add sign up link -->
+      <button type="submit">Continue</button>
+    </form>
+    <div class="login-disclaimer">
+      By creating an account or signing in, you understand and agree to Indeed's Terms. You also acknowledge our <a href="#">Cookie</a> and <a href="#">Privacy</a> policies. You will receive marketing messages from Indeed and may opt out at any time by following the unsubscribe link in our messages, or as detailed in our terms.
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

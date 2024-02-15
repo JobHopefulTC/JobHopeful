@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verify Phone Number</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .verify-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .verify-form {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: left; /* Align text left */
+    max-width: 400px; /* Limit width */
+    margin: auto; /* Center horizontally */
+  }
+  .verify-form h2 {
+    font-weight: bold;
+    margin-bottom: 10px; /* Add space below */
+  }
+  .verify-form input[type="tel"], 
+  .verify-form select,
+  .verify-form button {
+    width: calc(100% - 20px); /* Adjust width */
+    padding: 8px;
+    margin: 10px 0; /* Adjust margin */
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  .verify-form button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .verify-disclaimer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+  }
+  .verify-disclaimer a {
+    color: #007bff;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+
+<div class="verify-container">
+  <div class="verify-form">
+    <h2>Verify Your Phone Number</h2>
+    <p>Enter your phone number to verify your account.</p>
+    <form>
+      <select id="country-code" name="country-code">
+        <!-- Dropdown options for country codes -->
+        <option value="+1">+1 (United States)</option>
+        <!-- Add more options for other countries as needed -->
+      </select>
+      <input type="tel" id="phone-number" name="phone-number" placeholder="Enter your phone number">
+      <button type="submit">Verify</button>
+    </form>
+    <div class="verify-disclaimer">
+      By verifying your phone number, you agree to our <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
